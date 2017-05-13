@@ -10,7 +10,7 @@ def LU(A):
         for j in range (i+1, A.shape[0]):
             m = A[j][i]/pivot
             U[j][i] = m
-            for k in range (i, A.shape[0]+1):
+            for k in range (i, A.shape[1]):
                 A[j][k] = A[j][k] - (m* A[i][k])
     
     return A,U
