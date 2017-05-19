@@ -1,9 +1,8 @@
 #include <string>
 #include "student.h"
 
-typedef unsigned int uint;
 
-Student::Student(std::string &first, std::string &last, uint ssn, uint schoolId, uint classId)
+Student::Student(std::string &first, std::string &last, unsigned int ssn, unsigned int schoolId, unsigned int classId)
 	: Person(first, last, ssn)
 {
 
@@ -14,22 +13,22 @@ Student::~Student()
 
 }
 
-void Student::setSchoolId(uint school)
+void Student::setSchoolId(unsigned int school)
 {
 	schoolId = school;
 }
 
-uint Student::getStudentId() const
+unsigned int Student::getStudentId() const
 {
 	return schoolId;
 }
 
-void Student::setClassId(uint classid)
+void Student::setClassId(unsigned int classid)
 {
 	classId = classid;
 }
 
-uint Student::getClassId() const
+unsigned int Student::getClassId() const
 {
 	return classId;
 }
